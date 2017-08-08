@@ -65,8 +65,23 @@ def test_won_game
   assert_equal(3, team.update_score(result))
 end
 
+def test_lose_game
+  team = Team.new("Best Team", 0, "Awesome Coach", ["Best Player", "Good Player", "Other Good Player"])
+  result = "lose"
+  assert_equal(0, team.update_score(result))
+end
 
+## def test_team_can_play__win
+##  team = Team.new("team1")
+##  team.play_game(:win)
+##  assert_equal(1, team.points)
+## end
 
+## def test_team_starts_on_0
+##   team = Team.new("Team2")
+##   team.play_game(:loss)
+##   assert_equal(0, team.points)
+## end
 
 
 end

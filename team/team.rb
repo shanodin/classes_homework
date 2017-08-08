@@ -4,6 +4,10 @@ attr_reader( :team_name, :points, :coach, :players )
 attr_writer( :team_name, :points, :coach, :players )
 
   def initialize( team_name, points, coach, players)
+    ##def initialize(name)
+    ##@name = name
+    ##@points = 0
+    ##end
     @team_name = team_name
     @points = points
     @coach = coach
@@ -46,7 +50,10 @@ attr_writer( :team_name, :points, :coach, :players )
   end
 
 
-
+## def play_game( result )
+##   @points += 1 if (result == :win)
+##   end
+## end
 
 
 
