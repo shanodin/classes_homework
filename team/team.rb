@@ -49,6 +49,10 @@ attr_writer( :team_name, :points, :coach, :players )
     return points
   end
 
+## def play_game(result)
+##   @points += 3 if(result == :win)
+##   @points += 1 if(result == :draw)
+## end
 
 ## def play_game( result )
 ##   @points += 1 if (result == :win)
